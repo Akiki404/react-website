@@ -34,7 +34,7 @@ export const TextWrapper = styled.div`
     max-width: 540px;
     padding: 0 0 60px 0;
 
-    @media screen and(max-width: 768px){
+    @media(max-width: 768px){
         padding-bottom: 65px;
     }
     `   
@@ -52,7 +52,7 @@ export const Heading = styled.h1`
     margin-bottom: 24px;
     font-size: 48px;
     line-height: 1.1;
-    color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#1c2237')};
+    color: ${({ lightText }) => (lightText) ? '#f7f8fa' : '#1c2237'};
     `   
   
 export const Subtitle = styled.p`
@@ -60,7 +60,7 @@ export const Subtitle = styled.p`
     margin-bottom: 35px;
     font-size: 18px;
     line-height: 24px;
-    color: ${({ lightTextDesc }) => (lightTextDesc ? '#a9b3c1' : '#1c2237')};
+    color: ${({ lightTextDesc }) => (lightTextDesc) ? '#a9b3c1' : '#1c2237'};
 
     `  
 
